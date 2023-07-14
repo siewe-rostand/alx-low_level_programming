@@ -10,19 +10,27 @@
 
 int main(void)
 {
-	int i, j;
+	int i, j, k, m;
 
 	for (i = 0; i < 10; i++)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			putchar(48 + i);
-			putchar(48 + j);
-
-			if (i < 8 || j < 9)
+			for (k = i; k < 10; k++)
 			{
-				putchar(',');
-				putchar(' ');
+				for (m = j + 1; m < 10; m++)
+				{
+					putchar(48 + i);
+					putchar(48 + j);
+					putchar(' ');
+					putchar(48 + k);
+					putchar(48 + m);
+					if (i < 9 || j < 8 || k < 9 || m < 8)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
 			}
 		}
 	}
