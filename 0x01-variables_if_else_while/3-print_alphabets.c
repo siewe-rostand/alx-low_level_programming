@@ -18,8 +18,6 @@ int main(void)
 		putchar(lc);
 		lc++;
 	}
-	putchar('\n');
-
 	while (uc <= 'Z')
 	{
 		putchar(uc);
