@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	char str[] = "_puchar";
+	char str[] = "_putchar";
 	int i;
 	int size = (int) sizeof(str);
 
