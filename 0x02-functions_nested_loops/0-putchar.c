@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include "main.h"
+#include <string.h>
 
 /**
  * main - entry point
@@ -11,8 +12,14 @@
 int main(void)
 {
 	char str[] = "_puchar";
+	int i;
+	int size = (int) sizeof(str);
 
-	printf("%s\n", str);
+	for (i = 0; i < size; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 
 	return (0);
 }
