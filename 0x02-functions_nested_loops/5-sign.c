@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign(int n) @siewe
+ * print_sign - (int n) @siewe
  *
  * @n: the parameter
  *
