@@ -12,7 +12,7 @@
 int main(void)
 {
 	char str[] = "_putchar";
-	int i;
+	int i = 0;
 	int size = (int) sizeof(str);
 
 	for (i = 0; i < size; i++)
