@@ -14,8 +14,8 @@ int main(void)
 	char str[] = "_putchar";
 	int i = 0;
 	int size = (int) sizeof(str);
-
-	for (i = 0; i < size; i++)
+	int p = size - 1;
+	for (i = 0; i < p; i++)
 	{
 		_putchar(str[i]);
 	}
