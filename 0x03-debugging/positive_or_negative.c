@@ -3,20 +3,17 @@
 #include <stdlib.h>
 
 /**
- * positive_or_negative - check if positive or negative
+ * positive_or_negative - check if positive or negative@siewe-rostand
+ *
+ * @n: param
  *
  *Description:check random number
  *
  * Return: 0 (is zero),>0 (positive),<0 (negative)
  */
 
-int positive_or_negative(void)
+void positive_or_negative(int n)
 {
-	int n;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
@@ -29,6 +26,4 @@ int positive_or_negative(void)
 	{
 		printf("%d is zero\n", n);
 	}
-
-	return (0);
 }
