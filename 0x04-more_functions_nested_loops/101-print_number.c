@@ -1,26 +1,9 @@
 #include <math.h>
 #include "main.h"
 
-/**
- * power - exponents @siewe-rostand
- * @base: base
- * @exp: exponent
- * Return: result (int)
- */
-
-int  power(int base, int exp)
-{
-	int i, num;
-
-	num = 1;
-	for (i = 0; i < exp; ++i)
-		num *= base;
-
-	return (num);
-}
 
 /**
- * print_number - prints an integer
+ * print_number - prints an integer @siewe-rostand
  * @n: number to print
  * Return void
  */
