@@ -3,14 +3,14 @@
 #include <stdlib.h>
 
 /**
- * main - check if positive or negative
+ * positive_or_negative - check if positive or negative
  *
  *Description:check random number
  *
  * Return: 0 (is zero),>0 (positive),<0 (negative)
  */
 
-int main(void)
+int positive_or_negative(void)
 {
 	int n;
 
