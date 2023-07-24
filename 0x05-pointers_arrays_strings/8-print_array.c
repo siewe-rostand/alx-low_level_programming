@@ -2,28 +2,26 @@
 #include <stdio.h>
 
 /**
- * print_array - prints n elements of an array
- * @a: array of integers
- * @n: number of items to print
- * Return: void
+ * print_array - print `n` elements of an array of integers
+ * @a: int type array pointer
+ * @n: int type integer
+ * Description: Numbers must be separated by comma and space.
+ * Numbers should be displayed in the same order they are stored in array.
+ * You can only use _putchar to print.
  */
 
 void print_array(int *a, int n)
 {
-	int i, count;
+	int i;
 
 	i = 0;
-	count = 1;
-	if (n < 0)
-		n = 0;
-	if (n > 0)
+	for (n--; n >= 0; n--, i++)
 	{
-		while (a[i] != '\0' && count < n)
+		printf("%d", a[i]);
+		if (n > 0)
 		{
-			printf("%d, ", a[i]);
-			i++;
-			count++;
+			printf(", ");
 		}
-		printf("%d\n", a[i]);
 	}
+	printf("\n");
 }
