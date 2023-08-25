@@ -56,12 +56,13 @@ list_t *add_node_end(list_t **head, const char *str)
 
 int _strlen(const char *s)
 {
-        int len;
+	int len;
 
-        len = 0;
-        while (s[len] != '\0')
-        {
-                len++;
-        }
-        return (len);
+	len = 0;
+
+	while (s[len] != '\0')
+	{
+		len++;
+	}
+	return (len);
 }
