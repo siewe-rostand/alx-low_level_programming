@@ -46,4 +46,6 @@ typedef struct listp_s
 	struct listp_s *next;
 } listp_t;
 
+listint_t *find_listint_loop(listint_t *head);
+
 #endif
